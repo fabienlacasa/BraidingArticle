@@ -1,0 +1,186 @@
+--------------------------------------------------
+
+Log file for chamo : Covariances with the HAlo MOdel
+chamo version : git commit id 9ae34b9788666170acd6d6321ab1d5aa417fc68a
+Universal unique identifier of the run : 2cdfb740-27c9-4e91-bec4-ef0f6b4835ad
+
+                     ,,__
+           ..  ..   / o._)
+          /--`/--\  \-`||
+         /        \_/ / |
+       .`\  \__\  __.`.`
+         )\ |  )\ |`
+        // \\ // \\
+       ||_  \\|_  \\_
+   mrf `--` `--`` `--`
+
+--------------------------------------------------
+
+Run parameters :
+
+#Cosmology
+ T_cmb             :    2.7250000000000001     
+ power_spectrum    :            1
+ Pkext_file        : Pkext.dat                                                                                           
+ ombh2             :    2.1999999999999999E-002
+ omch2             :   0.12000000000000000     
+ omk               :    0.0000000000000000     
+ hubble            :    67.000000000000000     
+ omgh2             :    2.4689999999999999E-005
+ N_nu              :    0.0000000000000000     
+ N_eff             :    3.0400000000000000     
+ omnuh2            :    0.0000000000000000     
+ w0                :   -1.0000000000000000     
+ wa                :    0.0000000000000000     
+ ns                :   0.95999999999999996     
+ sig8              :   0.81000000000000005     
+
+#Halo model
+ M_min0            :    100000.00000000000     
+ M_max0            :    1.0000000000000000E+017
+ mass_function     :            4
+ str_dndm          : Tink200                                           
+ ihod              :            7
+ HOD description   :                                                   
+ HOD_alphasat      :    1.0000000000000000     
+ HOD_Mmin          :    12.199999999999999     
+ HOD_Msat          :    13.199999999999999     
+ HOD_sigmalogM     :   0.50000000000000000     
+ HOD_Mratio        :    10.000000000000000     
+ HOD_fcen          :    1.0000000000000000     
+ HODz_Mmin_a       :    11.214700000000001     
+ HODz_Mmin_b       :  -0.45567999999999997     
+ HODz_Mmin_c       :   0.64559000000000000     
+ HODz_Mmin_d       :  -0.11422000000000000     
+
+#Internal code parameters
+ verbose           :            1
+ Outstr_base       : Output/
+ Output_Obs        :            0
+ Output_Cov        :            0
+ Output_Fish       :            0
+ Output_Fish_Eucl  :            1
+ iint              :            2
+ iint_2D           :            1
+ nM_4gal           :           40
+ nM_4clust_perbin  :            5
+ SSC_nk_sigma2     :          500
+ SSC_kmin_sigma2   :    1.0000000000000000E-003
+ SSC_kmax_sigma2   :   0.50000000000000000     
+ nz_perbin         :           50
+ zbin_file         : Inputs/zbin.dat
+ logMbin_file      : Inputs/logMbin.dat
+ multipoles_file   : Inputs/multipoles.dat
+ inputM_unit       :            1
+ SSC window        :            0
+ SSC description   : fullsky                                           
+ SSC_lmax_psky     :          100
+ SSC_nl_psky       :           10
+ SSC_Cl_mask_file  : Clmask-fullsky.dat                                
+ SSC_fsky          :    1.0000000000000000     
+ Braid method      :            1
+ Braid description : Bij-consistent                                    
+
+--------------------------------------------------
+
+Input files
+Redshift bin stakes file : Inputs/zbin.dat
+   1.0000000000000000E-003
+  0.41799999999999998     
+  0.56000000000000005     
+  0.67800000000000005     
+  0.78900000000000003     
+  0.90000000000000002     
+   1.0189999999999999     
+   1.1550000000000000     
+   1.3240000000000001     
+   1.5760000000000001     
+   2.5000000000000000     
+Log(M) bin stakes file : Inputs/logMbin.dat
+   14.000000000000000     
+   14.500000000000000     
+   15.000000000000000     
+   15.500000000000000     
+   16.000000000000000     
+Multipole file : Inputs/multipoles.dat
+   30.000000000000000     
+   50.000000000000000     
+   100.00000000000000     
+   200.00000000000000     
+   400.00000000000000     
+   800.00000000000000     
+   1000.0000000000000     
+   2000.0000000000000     
+   3000.0000000000000     
+   5000.0000000000000     
+   8000.0000000000000     
+   10000.000000000000     
+   15000.000000000000     
+   20000.000000000000     
+   30000.000000000000     
+   50000.000000000000     
+
+--------------------------------------------------
+
+Run time messages
+
+ initiate cosmo :  0.200516999     s
+ fit_HOD_Euclid done :   2.10568190     s
+ integrate_overallM done :   11.8694038     s
+ integrate_inMbin done :  0.239182472     s
+ integrate_z1 done :   8.89673233E-02 s
+ make_sigmaproj2_arr done :   7.64870262     s
+ integrate_z1z2 done :   11.1932640     s
+ make_Psi_llp_int_arr done :   1.19705200E-02 s
+ make_Cl_ng2_arr_4Braid done :  0.311855316     s
+ make_Bij_arr done :   1.62860870     s
+ Bij_2_Braid done :   3.62396240E-04 s
+ 
+ Making outputs for Euclid Fisher analysis
+ Written z and DNgal in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_DNgal.dat
+ Written logM,z and Ncl in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_Ncl.dat
+ Written ell,z and Clgal terms (shot,1h,2h) in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_Clgal.dat
+ Written logM1,z1,logM2,z2 and Cov_Ncl terms (1h,2h) in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_Cov_Ncl.dat
+ Written l1,z1,l2,z2 and Cov_Clgal terms (Gauss,SSC,1h,1h_shot3g,1h_shot2g,shot1g,2h_1p3,3h_base0,4h_3rd,Braid) in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_Cov_Clgal.dat
+ Written logM,ell,z1,z2 and CrossCov terms (1h1g,1h2g,2h_2h,2h_1h1g,2h_1h2g,b2,2PT,SSC) in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_CrossCov.dat
+ Written z and dDNgaldHOD_alphasat in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_dDNgaldHOD_alphasat.dat
+ Written logM,z and dNcldHOD_alphasat in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_dNcldHOD_alphasat.dat
+ Written ell,z and dClgaldHOD_alphasat terms (shot,1h,2h) in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_dClgaldHOD_alphasat.dat
+ Written z and dDNgaldHOD_sigmalogM in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_dDNgaldHOD_sigmalogM.dat
+ Written logM,z and dNcldHOD_sigmalogM in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_dNcldHOD_sigmalogM.dat
+ Written ell,z and dClgaldHOD_sigmalogM terms (shot,1h,2h) in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_dClgaldHOD_sigmalogM.dat
+ Written z and dDNgaldHOD_Mratio in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_dDNgaldHOD_Mratio.dat
+ Written logM,z and dNcldHOD_Mratio in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_dNcldHOD_Mratio.dat
+ Written ell,z and dClgaldHOD_Mratio terms (shot,1h,2h) in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_dClgaldHOD_Mratio.dat
+ Written z and dDNgaldHODz_Mmin_a in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_dDNgaldHODz_Mmin_a.dat
+ Written logM,z and dNcldHODz_Mmin_a in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_dNcldHODz_Mmin_a.dat
+ Written ell,z and dClgaldHODz_Mmin_a terms (shot,1h,2h) in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_dClgaldHODz_Mmin_a.dat
+ Written z and dDNgaldHODz_Mmin_b in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_dDNgaldHODz_Mmin_b.dat
+ Written logM,z and dNcldHODz_Mmin_b in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_dNcldHODz_Mmin_b.dat
+ Written ell,z and dClgaldHODz_Mmin_b terms (shot,1h,2h) in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_dClgaldHODz_Mmin_b.dat
+ Written z and dDNgaldHODz_Mmin_c in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_dDNgaldHODz_Mmin_c.dat
+ Written logM,z and dNcldHODz_Mmin_c in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_dNcldHODz_Mmin_c.dat
+ Written ell,z and dClgaldHODz_Mmin_c terms (shot,1h,2h) in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_dClgaldHODz_Mmin_c.dat
+ Written z and dDNgaldHODz_Mmin_d in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_dDNgaldHODz_Mmin_d.dat
+ Written logM,z and dNcldHODz_Mmin_d in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_dNcldHODz_Mmin_d.dat
+ Written ell,z and dClgaldHODz_Mmin_d terms (shot,1h,2h) in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_dClgaldHODz_Mmin_d.dat
+ Written z and dDNgaldombh2 in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_dDNgaldombh2.dat
+ Written logM,z and dNcldombh2 in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_dNcldombh2.dat
+ Written ell,z and dClgaldombh2 terms (shot,1h,2h) in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_dClgaldombh2.dat
+ Written z and dDNgaldomch2 in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_dDNgaldomch2.dat
+ Written logM,z and dNcldomch2 in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_dNcldomch2.dat
+ Written ell,z and dClgaldomch2 terms (shot,1h,2h) in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_dClgaldomch2.dat
+ Written z and dDNgaldhubble in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_dDNgaldhubble.dat
+ Written logM,z and dNcldhubble in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_dNcldhubble.dat
+ Written ell,z and dClgaldhubble terms (shot,1h,2h) in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_dClgaldhubble.dat
+ Written z and dDNgaldsig8 in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_dDNgaldsig8.dat
+ Written logM,z and dNcldsig8 in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_dNcldsig8.dat
+ Written ell,z and dClgaldsig8 terms (shot,1h,2h) in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_dClgaldsig8.dat
+ Written z and dDNgaldns in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_dDNgaldns.dat
+ Written logM,z and dNcldns in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_dNcldns.dat
+ Written ell,z and dClgaldns terms (shot,1h,2h) in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_dClgaldns.dat
+ Written z and dDNgaldw0 in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_dDNgaldw0.dat
+ Written logM,z and dNcldw0 in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_dNcldw0.dat
+ Written ell,z and dClgaldw0 terms (shot,1h,2h) in file : Output/2cdfb740-27c9-4e91-bec4-ef0f6b4835ad_dClgaldw0.dat
+ 
+ Total computing time :   375.834503     s
